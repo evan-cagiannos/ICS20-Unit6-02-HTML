@@ -1,16 +1,36 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-
-<body>
-  Hello world
-  <script src="script.js"></script>
-</body>
-
+<!-- ICS20-Unit6-02-HTML -->
+  <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ICS20-Unit6-02-HTML" />
+    <meta name="keywords" content="mths, ics2o" />
+    <meta name="author" content="Evan Cagiannos" />
+    <meta name="theme-color" content="#FFFFFF" />
+    <title>Cookie Clicker</title>
+    <link rel="canonical" href="https://Evan-Cagiannos.github.io/ICS20-Unit6-02-HTML/" />
+    <link rel="manifest" href="/ICS2O-UNIT-6-02-HTML/site.webmanifest" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- None blocking for Lighthouse report -->
+    <!-- https://stackoverflow.com/questions/32759272/how-to-load-css-asynchronously -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></noscript>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-indigo.min.css" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-purple.min.css"></noscript>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  </head>
+  <body onload="updateCount()">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="./js/script.js"></script>
+    <h1><b>Cookie Clicker</b></h1>
+    <p></p>
+    <div id ="output"></div>
+    <p></p>
+    <img src="./img/cookie.png" alt="Cookie" onclick="getCookies()" style="width:200px;height:200px;">
+    <p></p>
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="resetCookies()">
+      Reset cookies
+    </button>
+  </body>
 </html>
